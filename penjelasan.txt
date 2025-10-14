@@ -1,0 +1,12 @@
+RAFIKAH NADHIF MAULIDINA - 230444040025 - UAS MOBILE PROGAMMING 2
+1. Ketika jalanin server pakai nodemon.js biar setiap da perubahan dalam sistem nya tidak usah di running berkali kali, cukup install 
+npm install -g nodemon dan jalanin nodemon main.js
+
+2. di App.tsx = struktur navigasi jangan lupa di import setiap screen (login, home, users, products)
+
+3. login => tampilan awal dari app
+   home => tampilan kedua setelah dari login/ dashboard
+   users => tampilan daftar user (ini pakai data dummy, jadi blm bisa create, edit, update, delete, hanya bisa view saja)
+   product => tampilan daftar product, sama seperti user, hanya bisa view saja 
+
+4. main.js untuk menjalankan server nya 

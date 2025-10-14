@@ -1,20 +1,36 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// Import semua screen
+import LoginScreen from './app/screen/login';
+import HomeScreen from './app/screen/home';
+import UserScreen from './app/screen/users';     // ✅ Tambahkan ini
+import ProductScreen from './app/screen/products'; // ✅ Tambahkan juga kalau udah ada
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const RootStack = createNativeStackNavigator({
+  screens: {
+    Login: {
+      screen: LoginScreen,
+      options: { headerShown: false },
+    },
+    Home: {
+      screen: HomeScreen,
+      options: { headerTitle: "Welcome" },
+    },
+    User: {
+      screen: UserScreen,
+      options: { headerTitle: "Daftar User" }, // ✅
+    },
+    Product: {
+      screen: ProductScreen,
+      options: { headerTitle: "Daftar Produk" }, // ✅
+    },
   },
 });
+
+export const Navigation = createStaticNavigation(RootStack);
+
+export default function App() {
+  return <Navigation />;
+}
+  
