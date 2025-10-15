@@ -1,4 +1,6 @@
-# UAS React Native & Node.js Project
+# UAS Mobile Progamming 2 
+Rafikah Nadhif Maulidina
+230444040025 - Manajemen Informatika
 
 Proyek ini adalah aplikasi sederhana berbasis **React Native** dengan server **Node.js**, dibuat sebagai tugas UAS. Aplikasi ini menampilkan navigasi antar halaman serta data dummy untuk **users** dan **products**.
 
@@ -8,21 +10,17 @@ Proyek ini adalah aplikasi sederhana berbasis **React Native** dengan server **N
 
 Agar server otomatis memuat ulang saat ada perubahan, gunakan **nodemon**:
 
-```bash
-npm install -g nodemon
-nodemon main.js
+npm install -g nodemon (install ini)
+nodemon main.js (perintah untuk menjalankan)
 
-root/
-│
-├─ App.tsx               # Entry point aplikasi, berisi navigasi antar screen
-├─ main.js               # Server Node.js
-├─ package.json          # Dependencies proyek
-│
-├─ screens/              # Folder untuk semua screen
-│   ├─ Login.tsx         # Tampilan awal login
-│   ├─ Home.tsx          # Dashboard setelah login
-│   ├─ Users.tsx         # Daftar user (dummy, view only)
-│   └─ Products.tsx      # Daftar product (dummy, view only)
-│
-└─ assets/               # Folder opsional untuk gambar / file statis
 
+## 📸 Dokumentasi
+
+### 🖼️ Tampilan Aplikasi
+![Tampilan Login](./documentation/login.png)
+![Tampilan Home](./documentation/home.png)
+![Tampilan User](./documentation/user.png)
+![Tampilan Product](./documentation/product.png)
+
+### 🎞️ Demo Aplikasi
+![Demo Aplikasi](./documentation/tampilan.gif)
