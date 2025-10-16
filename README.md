@@ -1,17 +1,27 @@
-# UAS Mobile Progamming 2 
-Rafikah Nadhif Maulidina
-230444040025 - Manajemen Informatika
+# 📱 UAS Mobile Programming 2  
 
-Proyek ini adalah aplikasi sederhana berbasis **React Native** dengan server **Node.js**, dibuat sebagai tugas UAS. Aplikasi ini menampilkan navigasi antar halaman serta data dummy untuk **users** dan **products**.
+**Nama:** Rafikah Nadhif Maulidina  
+**NIM:** 230444040025  
+**Program Studi:** Manajemen Informatika  
 
 ---
 
-## 🔧 Persiapan Server
+## 🧩 Deskripsi Proyek
 
-Agar server otomatis memuat ulang saat ada perubahan, gunakan **nodemon**:
+Proyek ini merupakan aplikasi sederhana berbasis **React Native** dengan backend **Node.js**, yang dibuat sebagai tugas **UAS Mobile Programming 2**.  
+Aplikasi ini menampilkan **navigasi antar halaman** serta menampilkan **data dummy** untuk *users* dan *products*.
 
-npm install -g nodemon (install ini)
-nodemon main.js (perintah untuk menjalankan)
+---
+
+## ⚙️ Persiapan Server
+
+Agar server otomatis memuat ulang saat ada perubahan, gunakan **nodemon**.
+
+### Pakai Nodemon:
+
+1. **Instal nodemon secara global:**
+   ```bash
+   npm install -g nodemon
 
 
 ## 📸 Dokumentasi
